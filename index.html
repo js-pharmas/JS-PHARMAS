@@ -1,20 +1,3 @@
-/*
-JS PHARMAS - Single-file React component (previewable)
-Instructions (read first):
-1. This is a single React component you can drop into a create-react-app / Vite React project.
-2. Put your logo file in the public folder and name it: /public/logo.png (or change the path in the code below).
-   - You uploaded a logo; when building locally, copy that file to the project's public/logo.png
-3. Tailwind CSS: this code uses Tailwind classes. If you don't have Tailwind, either add it or replace classes with your own CSS.
-4. Pricing: Prices are hidden by default (as requested). To edit prices, open "Admin -> Edit Prices" and enter the admin passcode (default: "jsadmin").
-   - Edited prices are saved to localStorage so you can update them without a backend.
-5. Contact details are prefilled with your provided info — change them in the CONTACTS object below if needed.
-
-Files you will likely want to create when using this component:
-- src/App.jsx  <- paste this component content
-- public/logo.png  <- your uploaded logo
-- index.css (Tailwind styles) or regular CSS if not using Tailwind
-
-*/
 
 import React, { useEffect, useState } from 'react';
 
@@ -26,14 +9,12 @@ const CONTACTS = {
   address: 'Lahore, Punjab Pakistan',
 };
 
-// Default products (no prices shown publicly). Edit names/descriptions here.
 const DEFAULT_PRODUCTS = [
   { id: 'p1', name: 'Paracetamol Tablets 500mg', desc: 'Effective pain reliever and fever reducer.' },
   { id: 'p2', name: 'Amoxicillin Capsules', desc: 'Broad-spectrum antibiotic.' },
   { id: 'p3', name: 'Multivitamin Syrup', desc: 'Daily vitamins for overall health.' },
 ];
 
-// Admin passcode to access price editor. Change it before sharing publicly.
 const ADMIN_PASSCODE = 'jsadmin';
 // --------------------------------------------------------------
 
